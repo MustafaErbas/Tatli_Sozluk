@@ -1,0 +1,46 @@
+
+    /* Sayfa yüksekliği ve içerik düzeni */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* İçerik alanı */
+.container {
+    flex: 1; /* Footer'ın yukarı itilmesini sağlar */
+}
+
+/* Footer stili */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+    a {
+        text-decoration: none; /* Alt çizgiyi kaldır */
+        color: inherit; /* Rengi miras al */
+        transition: transform 0.3s ease; /* Geçiş efekti */
+    }
+
+    a:hover {
+        color: blue; /* Üzerine gelince mavi yap */
+    }
+    .comment {
+        max-width: 100%; /* Yorum genişliğini sınırlayarak esnek yapar */
+        word-wrap: break-word; /* Uzun kelimeler satırın dışına taşarsa bölünmesini sağlar */
+        white-space: normal; /* Yorum metninin doğal akışında alt satıra geçmesini sağlar */
+    }
+    .list-group-item a {
+        max-width: 100%; /* Bağlantının genişliğini sınırlamak için */
+        word-wrap: break-word; /* Uzun kelimeleri satır sonuna gelince kır */
+        white-space: normal; /* Bağlantının alt satıra geçmesini sağlar */
+        display: block; /* Bağlantının tam genişliğe yayılmasını sağlar */
+    }
